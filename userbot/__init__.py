@@ -66,7 +66,7 @@ API_HASH = os.environ.get("API_HASH") or None
 STRING_SESSION = os.environ.get("STRING_SESSION") or None
 
 # Logging channel/group ID configuration.
-BOTLOG_CHATID = os.environ.get("BOTLOG_CHATID") or None
+BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID") or None)
 
 # Userbot logging feature switch.
 BOTLOG = sb(os.environ.get("BOTLOG") or "False")
@@ -258,9 +258,7 @@ with bot:
 
 
 async def check_alive():
-    await bot.send_message(216456807, "/beriMakanx")
-    await bot.send_message(BOTLOG_CHATID, "__Congratss.. Geez-ProjectsModded Has Been Active__")
-    await bot.send_message(1237022722, "BOTMU NYALA NYING")
+    await bot.send_message(BOTLOG_CHATID, "__Congratss.. Geez-Projects Has Been Active__")
     return
 
 with bot:
