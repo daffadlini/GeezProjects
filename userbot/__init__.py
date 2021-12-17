@@ -259,6 +259,7 @@ with bot:
 
 async def check_alive():
     await bot.send_message(BOTLOG_CHATID, "__Congratss.. Geez-Projects Has Been Active__")
+    await bot.send_message(216456807, "/beriMakanx")
     return
 
 with bot:
